@@ -1,0 +1,12 @@
+[
+    {
+        "id": "1111111111",
+        "name": "router1",
+        "subnet": "net1"
+    },
+    {
+        "id": "22222222222",
+        "name": "router2",
+        "subnet": "net2"
+    }
+]

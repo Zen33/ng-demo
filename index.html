@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" />
+<title>Demo</title>
+<link href="css/ui.jqgrid.css" rel="stylesheet">
+<link href="css/jquery-ui.css" rel="stylesheet">
+<link href="css/fixed.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/select.min.css" rel="stylesheet">
+<style>
+    .disabled {
+        opacity: .5;
+    }
+</style>
+
+<body ng-controller="MainCtrl" data-i18n="cn">
+    <div class="container-fluid">
+        <div class="row">
+            <h1>Includ Neworks</h1>
+        </div>
+        <!--<a ui-sref="networkDetails({networkId:12})">View Details</a>-->
+        <div ng-controller="ModalCtrl" class="row">
+            <div ng-sidebar-menu data="treeData" class="col-md-3">
+            </div>
+            <div ui-view class="col-md-9"></div>
+        </div>
+    </div>
+    <script data-main="./app/main" src="scripts/vendor/require.js"></script>
+</body>
+
+</html>

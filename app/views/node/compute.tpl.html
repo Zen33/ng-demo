@@ -1,0 +1,13 @@
+<div class="row form-group">
+    <div class="col-md-3">
+        <a href="javascript:;" ng-click="addComputeNode('computeNode')">{{'COMMON.ADD' | i18n}}</a>
+        <a href="javascript:;" ng-class="{'disabled':!cnRowId}" ng-click="removeComputeNode('computeNode',cnRowId)">{{'COMMON.REMOVE' | i18n}}</a>
+        <!--<a href="javascript:;" ng-click="refreshGrid(gridId)">刷新</a> -->
+    </div>
+    <div class="col-md-6">
+        <input jq-grid-filter class="form-control" type="text" data="data" grid-id="computeNode" row-id="cnRowId" placeholder="{{'COMMON.FILTER' | i18n}}"/>
+    </div>
+</div>
+<div class="row">
+    <ng-jq-grid config="config" data="data" grid-id="computeNode"></ng-jq-grid>
+</div>

@@ -1,0 +1,179 @@
+[
+    {
+        "id": "menu1",
+        "parent": "#",
+        "text": "MENU.ADMIN",
+        "state": {
+            "opened": true
+        }
+    },
+    {
+        "id": "menu1-1",
+        "parent": "menu1",
+        "text": "MENU.SYSTEM",
+        "state": {
+            "opened": true
+        }
+    },
+    {
+        "id": "menu1-1-1",
+        "parent": "menu1-1",
+        "text": "MENU.NETWORK",
+        "state": {
+            "opened": true
+        },
+        "a_attr": {
+            "sref": "admin.network"
+        }
+    },
+    {
+        "id": "menu1-1-2",
+        "parent": "menu1-1",
+        "text": "MENU.ROUTER",
+        "state": {
+            "opened": true
+        },
+        "a_attr": {
+            "sref": "admin.router"
+        }
+    },
+    {
+        "id": "menu1-1-3",
+        "parent": "menu1-1",
+        "text": "MENU.NODE",
+        "state": {
+            "opened": true
+        }
+    },
+    {
+        "id": "menu1-1-3-1",
+        "parent": "menu1-1-3",
+        "text": "MENU.COMPUTENODE",
+        "state": {
+            "opened": false
+        },
+        "a_attr": {
+            "sref": "admin.node,{query:'compute'}"
+        }
+    },
+    {
+        "id": "menu1-1-3-2",
+        "parent": "menu1-1-3",
+        "text": "MENU.GATEWAYNODE",
+        "state": {
+            "opened": false
+        },
+        "a_attr": {
+            "sref": "admin.node,{query:'gateway'}"
+        }
+    },
+    {
+        "id": "menu1-1-3-3",
+        "parent": "menu1-1-3",
+        "text": "MENU.VM",
+        "state": {
+            "opened": false
+        },
+        "a_attr": {
+            "sref": "admin.node,{query:'vm'}"
+        }
+    },
+    {
+        "id": "menu1-2",
+        "parent": "menu1",
+        "text": "MENU.MANAGEMENT",
+        "state": {
+            "opened": false
+        }
+    },
+    {
+        "id": "menu1-2-1",
+        "parent": "menu1-2",
+        "text": "MENU.INSTALLATION",
+        "state": {
+            "opened": false
+        }
+    },
+    {
+        "id": "menu1-2-1-1",
+        "parent": "menu1-2-1",
+        "text": "MENU.CONTROLLER",
+        "state": {
+            "opened": false
+        },
+        "a_attr": {
+            "sref": "controller"
+        }
+    },
+    {
+        "id": "menu1-2-1-2",
+        "parent": "menu1-2-1",
+        "text": "MENU.BORDERGATEWAY",
+        "state": {
+            "opened": false
+        },
+        "a_attr": {
+            "sref": "borderGateway"
+        }
+    },
+    {
+        "id": "menu1-2-1-3",
+        "parent": "menu1-2-1",
+        "text": "MENU.BORDERGATEWAYCONF",
+        "state": {
+            "opened": false
+        },
+        "a_attr": {
+            "sref": "borderGatewayConf"
+        }
+    },
+    {
+        "id": "menu1-3",
+        "parent": "menu1",
+        "text": "MENU.RESPOOL",
+        "state": {
+            "opened": false
+        }
+    },
+    {
+        "id": "menu1-3-1",
+        "parent": "menu1-3",
+        "text": "MENU.IPPOOL",
+        "state": {
+            "opened": false
+        },
+        "a_attr": {
+            "sref": "ipPool"
+        }
+    },
+    {
+        "id": "menu1-3-2",
+        "parent": "menu1-3",
+        "text": "MENU.NETWORKTOPO",
+        "state": {
+            "opened": false
+        },
+        "a_attr": {
+            "sref": "topo"
+        }
+    },
+    {
+        "id": "menu2",
+        "parent": "#",
+        "text": "MENU.SYSSETTING",
+        "state": {
+            "opened": false
+        }
+    },
+    {
+        "id": "menu2-1",
+        "parent": "menu2",
+        "text": "MENU.REGISTER",
+        "state": {
+            "opened": false
+        },
+        "a_attr": {
+            "sref": "register"
+        }
+    }
+]

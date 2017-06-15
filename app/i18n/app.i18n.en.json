@@ -1,0 +1,78 @@
+{
+    "NETWORK": {
+        "NAME": "Name",
+        "TITLE": "Network",
+        "EDITNETWORK": "Edit Network",
+        "ADDSUBNETWORK": "Add Sub Network",
+        "GRIDHEADNETWORK": "id,Name,Subnet,VNI,Type,Action",
+        "ADDNETWORK": "Create Network",
+        "VNI": "VNI",
+        "NETWORKTYPE": {
+            "NAME": "Type Of Network",
+            "TYPE1": "VXLAN",
+            "TYPE2": "External"
+        }
+    },
+    "ROUTER": {
+        "TITLE": "Logical Router",
+        "GRIDHEADNODE": "id,Node,Incloud Manager,Status,Version",
+        "GRIDHEADIM": "id,Incloud Manager,IP,iCenter,Version",
+        "EDITNODE": "Edit Node"
+    },
+    "NODE": {
+        "TITLE": "Node",
+        "COMPUTE": "Compute Node",
+        "GATEWAY": "Gateway Node",
+        "VM": "Virtual Machine",
+        "GRIDHEADCOMPUTENODE": "id,Cluster,Controller",
+        "GRIDHEADGATEWAYNODE": "id,Name,Controller"
+    },
+    "MENU": {
+        "ADMIN": "Administrator",
+        "SYSTEM": "System",
+        "NETWORK": "Network",
+        "ROUTER": "Router",
+        "NODE": "Node",
+        "COMPUTENODE": "Compute Node",
+        "GATEWAYNODE": "Gateway Node",
+        "VM": "Virtual Machine",
+        "MANAGEMENT": "Management",
+        "INSTALLATION": "Installation",
+        "CONTROLLER": "Controller",
+        "BORDERGATEWAY": "Border Gateway",
+        "BORDERGATEWAYCONF": "BG Settings",
+        "RESPOOL": "Res Pool",
+        "IPPOOL": "IP Pool",
+        "NETWORKTOPO": "Network Topo",
+        "SYSSETTING": "SYS Settings",
+        "REGISTER": "Register"
+    },
+    "BTN": {
+        "OK": "OK",
+        "CANCEL": "Cancel",
+        "CONFIRM": "Confirm",
+        "OTHER": "Other"
+    },
+    "MSG": {
+        "ALERT": "Alert",
+        "NONETWORKSELECTED": "Please select a network.",
+        "NONODESELECTED": "Please select a node.",
+        "COMBO": "Please select or input",
+        "ERROR": {
+            "REQUIRED": "{{err}} required!"
+        },
+        "CONFIRM": {
+            "TITLE": "Confirm",
+            "DATACHANGED": "Data has changed, are you sure you want to cancel this operation?",
+            "REMOVEITEM": "Are you sure you want to remove {{item}}?"
+        }
+    },
+    "COMMON": {
+        "NAME": "Name",
+        "ADD": "Add",
+        "EDIT": "Edit",
+        "REMOVE": "Remove",
+        "SEARCH": "Search",
+        "FILTER": "Filter"
+    }
+}

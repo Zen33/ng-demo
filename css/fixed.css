@@ -1,0 +1,457 @@
+﻿@charset "utf-8";
+/* 
+*jqgrid表格样式
+*/
+/* jqgrid表格的th，td高度 */
+.ui-jqgrid .ui-jqgrid-htable th {
+    height: 30px !important;
+}
+.ui-jqgrid .ui-jqgrid-htable th div{
+    line-height:17px;
+}
+.ui-jqgrid tr.jqgrow td {
+    height: 30px !important;
+    white-space: nowrap;
+}
+/* jqgrid表格的表头、底部以及左侧序列号背景色 */
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
+    background:#d7deee;
+}
+/* jqgrid表格内容的背景色 */
+.ui-widget-content{
+    background:#ecf2f8;
+}
+/* jqgrid表格内容的隔行换色 */
+.grid-bgcolor{
+    background-color: #fff;
+    background-image: none;
+}
+/* jqgrid表格页码输入框的样式 */
+.ui-jqgrid .ui-pg-input {
+    border-radius:0;
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    margin: 0;
+    padding:0;
+    margin-bottom:2px
+}
+/* jqgrid表格中hover，focus状态 */
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover,
+.ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    border: 0;
+    background: #dff4f5;
+    font-weight: bold;
+    color: #3694eb;
+    cursor: default;
+}
+/* 表格不可用 */
+table.disabled tr,table.disabled tr.ui-state-highlight,table.disabled .ui-state-hover{
+    background: #ecf2f8;
+    color:#c9ccd6;
+}
+/* grid行不可选，置灰 */
+.ui-state-hover.disabled, .ui-widget-content .ui-state-hover.disabled, .ui-widget-header .ui-state-hover.disabled, .ui-widget-content.disabled.ui-state-highlight{
+    background: #ecf2f8;
+    color: #C9CCD6;
+}
+.ui-state-hover.disabled.grid-bgcolor, .ui-widget-content .ui-state-hover.disabled.grid-bgcolor, .ui-widget-header .ui-state-hover.disabled.grid-bgcolor , .ui-widget-content.disabled.grid-bgcolor.ui-state-highlight{
+    background: #fff;
+    color: #C9CCD6;
+}
+.ui-widget-content.jqgrow.disabled, .ui-widget-content.jqgrow.disabled{
+    color: #C9CCD6;
+}
+/* jqgrid中a的样式（默认，hover，选中） */
+.ui-state-hover a, .ui-widget-content .ui-state-hover a, .ui-widget-header .ui-state-hover a, .ui-state-focus a, .ui-widget-content .ui-state-focus a, .ui-widget-header .ui-state-focus a{
+    color: #3694eb;
+}
+.ui-state-hover a, .ui-state-hover a:hover, .ui-state-hover a:link, .ui-state-hover a:visited, .ui-state-focus a, .ui-state-focus a:hover, .ui-state-focus a:link, .ui-state-focus a:visited {
+    color: #3694eb;
+    text-decoration: none
+}
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    border: 0;
+    background: #dff4f5;
+    color: #0eb5bb;
+}
+.ui-state-highlight a, .ui-widget-content .ui-state-highlight a, .ui-widget-header .ui-state-highlight a{
+    color:#0eb5bb;
+}
+/* jqgrid中的“每页显示几行”下拉框样式 */
+.ui-jqgrid .ui-pg-selbox {
+    font-size: 12px;
+    line-height: 18px;
+    display: block;
+    width:36px;
+    height: 18px;
+    margin: 0;
+    border:1px solid #5B6367;
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    background:#fff url(../../../imgs/operation-icon2.png) 19px -39px no-repeat;
+}
+.ui-jqgrid:hover .ui-pg-selbox:hover{
+    border:1px solid #0eb5bb;
+    background:#fff url(../../../imgs/operation-icon2.png) 19px -57px no-repeat;
+}
+/* jqgrid页码信息样式 */
+.ui-jqgrid .ui-paging-info {
+    font-weight: normal;
+    height:18px;
+    margin-top: 0;
+    margin-right: 4px;
+    margin-bottom: 5px;
+} 
+/* 调整jqgrid中td内容边距和边框 */
+.ui-jqgrid .ui-pg-table td{
+    padding:1px;
+} 
+.ui-jqgrid .ui-pg-table td.ui-pg-button{
+    padding:1px;
+} 
+.ui-jqgrid tr.ui-row-ltr td {
+    text-align: center;
+    border-right-width: 0;
+}
+.ui-widget-content {
+    border: 1px solid #ddd;
+}
+tr.ui-widget-content{
+    border:0;
+}
+.ui-jqgrid tr.jqgrow td{
+    border-bottom-width:0;
+}  
+.ui-jqgrid{
+    border: 1px solid #bababb;
+    border-radius:0px;
+}
+.ui-jqgrid tr.jqgroup td{
+    border-bottom-color:#BABABB;
+}
+/* jqgrid内容文字过长时显示省略号，设置间隔 */
+.ui-jqgrid-bdiv .ui-widget-content.jqgrow td{
+    text-overflow:ellipsis;
+    padding:0 5px;
+}
+/* jqgrid底部页面信息颜色块圆角 */
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    border-bottom-right-radius: 0px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+    border-bottom-left-radius: 0px;
+}
+/* jqgrid翻页图标 */
+/* 可用翻页按钮的图片 */
+.ui-pg-table .ui-pg-button .ui-icon{
+    background:url(../../../imgs/operation-icon.png);
+}
+/* 禁用翻页按钮的图片 */
+ .ui-pg-table .ui-state-disabled .ui-icon{
+    background:url(../../../imgs/operation-icon.png);
+}
+/* 以下设置“上一页”，“下一页”，“最前页”，“最后页”的图标坐标 */
+/* “下一页”可用 */
+.ui-pg-table .ui-pg-button .ui-icon-seek-next{
+    background-position:2px -64px;
+}
+/* “最后页”可用 */
+.ui-pg-table .ui-pg-button .ui-icon-seek-end{
+    background-position:-18px -64px;
+}
+/* “上一页”可用 */
+.ui-pg-table .ui-pg-button .ui-icon-seek-prev{
+    background-position:-18px -20px;
+}
+/* “第一页”可用 */
+.ui-pg-table .ui-pg-button .ui-icon-seek-first{
+    background-position:2px -20px;
+}
+/* “下一页”禁用 */
+.ui-pg-table .ui-state-disabled .ui-icon-seek-next{
+    background-position:2px -86px;
+}
+/* “最后页”禁用 */
+.ui-pg-table .ui-state-disabled .ui-icon-seek-end{
+    background-position:-18px -86px;
+}
+/* “上一页”禁用 */
+.ui-pg-table .ui-state-disabled .ui-icon-seek-prev{
+    background-position:-18px -42px;
+}
+/* “第一页”禁用 */
+.ui-pg-table .ui-state-disabled .ui-icon-seek-first{
+    background-position:2px -42px;
+}
+.ui-pg-button{
+    border:0;
+}
+/* 翻页按钮位置 */
+.ui-pg-table #pager_center .ui-pg-table{
+    margin-top:-2px
+}
+/* jqgrid表格中有分组时，折行按钮的图标 */
+.ui-icon, .ui-widget-content .ui-icon{
+    background-image:url(../../../imgs/ui-icons_222222_256x240.png);
+}
+/* jqgrid表格样式结束 */
+/* 层级tree虚线效果 开始 */
+.tree-expanded {
+    background: url('../../../imgs/tree_icons.png') no-repeat -15px 0px;
+}
+.tree-expanded-hover {
+    background: url('../../../imgs/tree_icons.png') no-repeat -47px 0px;
+}
+.tree-collapsed {
+    background: url('../../../imgs/tree_icons.png') no-repeat 2px 0px;
+}
+.tree-collapsed-hover {
+    background: url('../../../imgs/tree_icons.png') no-repeat -30px 0px;
+}
+.tree-lines .tree-expanded, .tree-lines .tree-root-first .tree-expanded {
+    background: url('../../../imgs/tree_icons.png') no-repeat -144px 0;
+}
+.tree-lines .tree-node-last .tree-expanded, .tree-lines .tree-root-one .tree-expanded {
+    background: url('../../../imgs/tree_icons.png') no-repeat -80px 0;
+}
+.tree-lines .tree-node-last .tree-collapsed, .tree-lines .tree-root-one .tree-collapsed {
+    background: url('../../../imgs/tree_icons.png') no-repeat -64px 0;
+}
+.tree-line {
+    background: url('../../../imgs/tree_icons.png') no-repeat -176px 0;
+}
+.tree-join {
+    background: url('../../../imgs/tree_icons.png') no-repeat -192px 0;
+}
+.tree-joinbottom {
+    background: url('../../../imgs/tree_icons.png') no-repeat -160px 0;
+}
+.tree-folder {
+    background: url('../../../imgs/tree_icons.png') no-repeat -208px 0;
+}
+.tree-folder-open {
+    background: url('../../../imgs/tree_icons.png') no-repeat -224px 0;
+}
+.tree-file {
+    background: url('../../../imgs/tree_icons.png') no-repeat -240px 0;
+}
+.tree-loading {
+    background: url('../../../imgs/loading.gif') no-repeat center center;
+}
+.tree-expanded, .tree-collapsed, .tree-folder, .tree-file, .tree-checkbox, .tree-indent{
+    height:19px;
+}
+/* 层级tree虚线效果 结束 */
+/* 二级tab菜单复写 开始 */
+.tabs{
+    border:none;
+}
+.tabs-header{
+    padding:12px 20px 0;
+}
+.tabs-wrap{
+  border-bottom: 1px solid #bababb;
+}
+.tabs-wrap .tabs {
+  list-style: none;
+  display: table;
+  padding: 0;
+  width: 100%;
+}
+.tabs-wrap .tabs a {
+  text-decoration: none;
+}
+.tabs-wrap .tabs li {
+  position: relative;
+  float: left;
+  background: transparent url(../../../imgs/wave.png) fixed repeat;
+  font-size: 14px;
+}
+.tabs-wrap .tabs li:first-child:before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 1px;
+  background: transparent url(../../../imgs/tab-icon.png) 0px 0px no-repeat;
+}
+.tabs-wrap .tabs li:first-child a {
+  padding: 0 19.5px 0 19.5px;
+}
+.tabs-wrap .tabs li:last-child:after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15px;
+  background: transparent url(../../../imgs/tab-icon.png) 0px -33px no-repeat;
+  top: 0;
+  left: 100%;
+}
+.tabs-wrap .tabs li:before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15px;
+  background: transparent url(../../../imgs/tab-icon.png) 0px -66px no-repeat;
+}
+.tabs-wrap .tabs li a {
+  color: #5b6367;
+  display: inline-block;
+  height: 27px;
+  line-height: 27px;
+  padding: 0 19.5px 0 34.5px;
+  border:none;
+}
+.tabs-wrap .tabs li a.tabs-inner:hover{
+    color: #5b6367;
+    background:transparent;
+}
+.tabs-wrap .tabs li.tabs-selected a.tabs-inner:hover{
+    color: #0eb5bb;
+}
+.tabs-wrap .tabs li a span{
+    font-size:14px;
+    font-weight:normal;
+}
+.tabs-wrap .tabs li.tabs-selected {
+  background: white;
+}
+.tabs-wrap .tabs li.tabs-selected a {
+  color: #0eb5bb;
+}
+.tabs-wrap .tabs li.tabs-selected:first-child:before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15px;
+  background: transparent url(../../../imgs/tab-icon.png) 0px -99px no-repeat;
+}
+.tabs-wrap .tabs li.tabs-selected:last-child:after {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15px;
+  background: transparent url(../../../imgs/tab-icon.png) 0px -99px no-repeat;
+}
+.tabs-wrap .tabs li.tabs-selected:before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15px;
+  background: transparent url(../../../imgs/tab-icon.png) 0px -33px no-repeat;
+}
+.tabs-wrap .tabs li.tabs-selected + li:before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15px;
+  background: transparent url(../../../imgs/tab-icon.png) 0px -99px no-repeat;
+}
+/* 二级tab菜单复写 结束 */
+/* 最外层布局南部的底色 */
+.layout-panel-south .layout-body{
+    background:#FFF
+}
+/* 多选tree的多选框图标 */
+.tree-checkbox0 {
+    background: url('../../../imgs/tree_icons.png') no-repeat -208px -18px;
+}
+.tree-checkbox1 {
+    background: url('../../../imgs/tree_icons.png') no-repeat -224px -18px;
+}
+.tree-checkbox2 {
+    background: url('../../../imgs/tree_icons.png') no-repeat -240px -18px;
+}
+/* combo划过和focus效果 */
+.textbox.combo:not(.textbox-disabled):hover,.textbox.combo.textbox-focused:not(.textbox-disabled){
+    border-color:#1b9da1;
+}
+.textbox.combo:not(.textbox-disabled):hover .combo-arrow,.textbox.combo.textbox-focused:not(.textbox-disabled) .combo-arrow{
+    background:url(../../../imgs/operation-icon.png) no-repeat -44px -62px;
+}
+/* combobox下拉框划过选中状态 */
+.combobox-item{
+    border-left:4px solid transparent;
+}
+.combobox-item.combobox-item-selected{
+    background:#ecf2f8;
+    border-left:4px solid #0eb5bb;
+    color:#0eb5bb;
+}
+.combobox-item.combobox-item-hover:not(.combobox-item-selected){
+    color:#5b6367;
+    background:#c7cee0;
+}
+/* easyui-slider滑块 */
+.slider-rulelabel{
+    margin-right: -14px;
+}
+.slider-rulelabel span:first-child{
+    margin-left: -11px!important;
+}
+.slider-rulelabel span:first-child+span{
+    margin-left: -18px!important;
+}
+.slider-rulelabel span:first-child+span+span{
+    margin-left: -25px!important;
+}
+/* 弹出框右上角关闭、打开、伸缩等图标类替换 */
+.panel-tool-close {
+    background: url('../../../imgs/panel_tools.png') no-repeat -16px 0px;
+}
+.panel-tool-min {
+    background: url('../../../imgs/panel_tools.png') no-repeat 0px 0px;
+}
+.panel-tool-max {
+    background: url('../../../imgs/panel_tools.png') no-repeat 0px -16px;
+}
+.panel-tool-restore {
+    background: url('../../../imgs/panel_tools.png') no-repeat -16px -16px;
+}
+.panel-tool-collapse {
+    background: url('../../../imgs/panel_tools.png') no-repeat -32px 0;
+}
+.panel-tool-expand {
+    background: url('../../../imgs/panel_tools.png') no-repeat -32px -16px;
+}
+/* 导航样式 */
+.nav-pills>li>a {
+    border-radius: 0px;
+}
+.nav-pills>li>a:focus {
+    background-color: #6ea3e1;
+}
+.nav-stacked>li+li{
+    margin-top:0;
+}
+/* 解决小屏幕下清单树头部标题折行的问题 */
+.nav-tabs.nav-justified>li {
+    display: table-cell;
+    width: 1%;
+}
+/* 右侧点击提示框开始 */
+.tooltip{
+    border-radius:0;
+}
+.tooltip,.tooltip .panel-header{
+    background:#c6cedf;
+}
+.tooltip .panel-header,.tooltip .panel-body{
+    border:0;
+}
+.tooltip table{
+    margin:10px 15px;
+}
+.tooltip table tr{
+    line-height: 30px;
+}
+.tooltip table th{
+    min-width:100px;
+    font-weight: bold;
+    vertical-align:top;
+}
+.tooltip table td{
+    word-break: break-all;
+}
+/* 右侧点击提示框结束*/
